@@ -1,4 +1,7 @@
- .header{
+*{
+    font-family: 'Radio Canada', sans-serif;
+}
+.header{
     display: flex;
     width: 100%;
     background-color: #000020;
@@ -30,8 +33,13 @@
      box-sizing: border-box; /*prop q hace q los elementos no crezcan
      mas del tamaño q uno le dio*/
  }
+ h1{
+    font-size: 50px;
+ }
 
  h2{
+     height: 45px;
+     font-size: 36px;
      color: #000020;
  }
  .container {
@@ -50,7 +58,6 @@
  ul{list-style: none;}
 
  body{
-    font-family:"Roboto",sans-serif;
     font-size: 20px;
      margin: 0;
      background-color:#000010;    
@@ -62,6 +69,7 @@
  }
 
  .save{
+     font-size: medium;
     width: 450px; 
     text-align: center;
  }
