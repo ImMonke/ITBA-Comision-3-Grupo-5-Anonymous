@@ -1,38 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Registrar</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-<div class="wrapper">
-    <div class="header">
-    <img src="lista.png" alt="Menú" class="menu">
-    <img src="itbank.png" alt="ITBANK" class="titulo">
-    </div>
-
-    <div class="regis">
-     <h1> Registrarse</h1>
-    </div>
-    <div class="crearcuenta">
-        <div class="container">
-        <h2>Crear una cuenta</h2>
-        <label class="label"> Número de documento <input type="number" id="Num"></label>
-        <label class="label"> Tu clave <input type="number" id="clave"></label>
-        <label class="label"> Tu usuario <input type="number" id="usuario"></label>
-        <button>Crear Cuenta</button>
-    </div>
-    
-    </div>
-    <footer>
-        <div class="save">
-            <p>Los datos de cuenta, Token de seguridad, los datos de tu tarjeta de coordenadas y tus claves personales. ¡No los compartas! </p>
-            <p>&copy; ITBANK 2022</p>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Registrar</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <img src="lista.png" alt="Menú" class="menu">
+                <img src="itbank.png" alt="ITBANK" class="titulo">
+            </div>
+            <div class="regis">
+                <h1> Registrarse</h1>
+            </div>
+            <div class="container">
+                <h2>Crear una cuenta</h2>
+                <input class="form-input" type="number" id="dni" placeholder="Número de documento">
+                <input class="form-input" type="number" id="clave" placeholder="Clave">
+                <input class="form-input" type="text" id="usuario" placeholder="Nombre de Usuario">
+                <button>Crear Cuenta</button>
+            </div>
+            <footer>
+                <div class="save">
+                    <p>Los datos de cuenta, Token de seguridad, los datos de tu tarjeta de coordenadas y tus claves personales.</p>
+                    <p>¡No los compartas! </p>
+                    <p>&copy; ITBANK 2022</p>
+                </div>
+            </footer>
         </div>
-    </footer>
-</div>
-</body>
+    </body>
 </html>
