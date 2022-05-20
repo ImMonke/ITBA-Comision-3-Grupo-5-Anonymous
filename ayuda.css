@@ -1,3 +1,7 @@
+* {
+  font-family: "Radio Canada", sans-serif;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -7,10 +11,12 @@ body {
 .navbar {
   display: flex;
   width: 100%;
-  height: 10%;
-  background-color: #000020;
+  height: 10vh;
+  background-color: #000030;
   justify-content: center;
   align-items: center;
+  top: 0vh;
+  position: sticky;
 }
 
 .menu {
@@ -21,6 +27,7 @@ body {
   align-self: center;
   filter: invert(1);
   cursor: pointer;
+  min-width: 35px;
 }
 
 .titulo {
@@ -29,18 +36,19 @@ body {
   object-fit: cover;
   filter: brightness(10);
   cursor: pointer;
+  min-width: 150px;
 }
 
 .inicio {
-  margin-top: -0.01%;
   width: 100%;
   height: 20%;
   background-color: #000010;
-  background-image: url("atencion.jpg");
+  background-image: url("./imagenes/atencion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 6%;
-  padding-bottom: 7%;
+  padding-bottom: 10%;
+  box-shadow: 0 40px 80px #000010 inset;
 }
 
 .pregunta {
@@ -50,37 +58,40 @@ body {
   margin-bottom: 3%;
   margin-top: 0;
   color: #fff;
-  -webkit-text-stroke: 1px #000010;
+  text-shadow: 0px 0px 5px #000020;
+  font-weight: bold;
 }
 
 .buscador {
   width: 50%;
-  background-color: #fff;
-  border-radius: 15px;
-  height: 50px;
-  border: 1px solid rgb(248, 0, 255, 1);
+  background: linear-gradient(15deg, #00009f 0%, #0000a0 50%, #0077ff 100%);
+  border-radius: 17px;
+  height: 52px;
   margin-left: 25%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 1.5%;
-  /* border-image: linear-gradient(
-    90deg,
-    rgba(0, 255, 51, 1) 0%,
-    rgba(0, 255, 154, 1) 33%,
-    rgba(248, 0, 255, 1) 66%,
-    rgba(255, 201, 0, 1) 100%
-  ); */
+  justify-content: center;
+}
+
+.fondo {
+  width: 99.4%;
+  background: #fff;
+  border-radius: 15px;
+  height: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0.017%;
 }
 
 .input {
   border: none;
   background: none;
   outline: none;
-  margin-left: 20px;
+  margin-left: 2%;
   font-size: 20px;
+  font-weight: normal;
   width: 100%;
-  font-weight: bold;
 }
 
 .boton {
@@ -88,4 +99,89 @@ body {
   color: grey;
   margin-top: 4px;
   margin-right: 2%;
+  height: max-content;
+  width: max-content;
+}
+
+.sombra {
+  width: 100%;
+  box-shadow: 0 -50px 50px #000010;
+  height: 10%;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2% 0;
+  font-size: 30px;
+  background-color: #000010;
+}
+
+.grid-container {
+  margin-left: 25%;
+  width: 50%;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  color: #fff;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  column-gap: 3%;
+  row-gap: 3%;
+}
+
+.grid-container div {
+  border: 1px solid #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.grid3 {
+  color: #000;
+  text-align: left;
+  grid-column: span 2;
+  background-color: #fff;
+  font-size: 125%;
+  box-shadow: 7px 7px #000050;
+}
+
+.grid3 p {
+  width: 45%;
+  margin-left: 5%;
+  display: block;
+  font-weight: bold;
+}
+
+.grid3 a {
+  text-decoration: none;
+  color: #000080;
+}
+
+.mapita {
+  width: 20%;
+  transform: rotate(15deg);
+  filter: brightness(10%);
+  margin-left: 50%;
+  margin-top: -90%;
+}
+
+.texto-final {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 3%;
+  font-weight: bold;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  margin-top: 6%;
+  border-top: 1px solid rgba(255, 255, 255, 0.082);
+}
+
+footer img {
+  cursor: pointer;
+  filter: invert(0.75);
+  margin-bottom: -5px;
 }
