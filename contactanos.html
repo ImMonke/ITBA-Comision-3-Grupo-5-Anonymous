@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
- <body>
-		<form action="">
-			<h2>¡CONTACTANOS!</h2>
-			<input type="text" name="Nombre" placeholder="Nombre">
-			<input type="text" name="Correo" placeholder="Correo">
-			<input type="text" name="Telefono" placeholder="Teléfono">
-			<textarea name="mensaje" placeholder="¡Escribinos acá tu consulta!"></textarea>
-			<a href=""><input type="button" value="ENVIAR" id="boton">
-		</form>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contactanos.css" />
+    <link
+      rel="preconnect"
+      href="https://file.myfontastic.com/bZZvQAjNp33makG3Kr9V8f/icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>ITBANK-Contactanos</title>
+    <link rel="icon" href="./IMAGENES/ITBANK.logo.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="./IMAGENES/lista.png" alt="Menú" class="menu" />
+      <img src="./IMAGENES/ITBANK.logo.png" alt="ITBANK" class="titulo" />
+    </nav>
+    <div class="contactanos"></div>
+    <div class="container">
+      <form action="" class="form-container">
+        <h2>Contactanos</h2>
+        <input type="text" class="mb-2" placeholder="Nombre" />
+        <input type="text" class="mb-2" placeholder="Correo" />
+        <input type="text" class="mb-2" placeholder="Teléfono" />
+        <textarea
+          name="Mensaje"
+          class="mb-2"
+          placeholder="Escribinos acá tu consulta..."
+        ></textarea>
+        <button>Enviar</button>
+      </form>
+    </div>
+  </body>
 </html>
