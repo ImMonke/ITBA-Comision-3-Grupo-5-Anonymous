@@ -66,7 +66,7 @@ body {
 
 .buscador {
   width: 50%;
-  background: linear-gradient(15deg, #b700ff 0%, #430050 50%, #b700ff 100%);
+  background: linear-gradient(15deg, #000050 0%, #0000ff 100%);
   border-radius: 17px;
   height: 52px;
   margin-left: 25%;
@@ -165,8 +165,7 @@ body {
 }
 
 .grid1 li:hover {
-  border-bottom: 1px solid #fff;
-  transition: border-bottom 0.5s ease;
+  text-decoration: underline;
 }
 
 .titulito {
@@ -174,6 +173,12 @@ body {
   width: max-content;
   justify-self: center;
   font-size: 150%;
+  cursor: default !important;
+}
+
+.titulito:hover {
+  text-decoration: none !important;
+  cursor: default;
 }
 
 .grid2 img {
@@ -186,7 +191,7 @@ body {
 .grid2 {
   display: grid;
   font-size: 150%;
-  gap: 20%;
+  gap: 10%;
   justify-content: center;
   align-items: center;
   grid-template-rows: 3fr repeat(5, 1fr);
@@ -194,26 +199,20 @@ body {
 }
 
 .grid2 li {
-  width: max-content;
+  width: auto;
   justify-self: center;
 }
 
-.grid2 :last-child {
-  word-break: break-all;
-}
-
 .grid2 li:hover {
-  border-bottom: 1px solid #fff;
-  transition: border-bottom 0.5s ease;
+  text-decoration: underline;
 }
 
 .grid3 {
-  color: #000;
+  color: #000020;
   text-align: left;
   grid-column: span 2;
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(255, 255, 255);
   font-size: 125%;
-  box-shadow: 7px 7px #500049;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 5%;
@@ -230,10 +229,14 @@ body {
 
 .grid3 a {
   text-decoration: none;
-  color: #000080;
+  color: #00008f;
   grid-column: 2 / 3;
   grid-row: 1 / 3;
   width: 100%;
+}
+
+.grid3 a:hover {
+  text-decoration: underline;
 }
 
 .grid3 :nth-child(2) {
@@ -244,6 +247,11 @@ body {
   width: 50%;
   transform: rotate(15deg);
   filter: brightness(10%);
+}
+
+.mapita:hover {
+  filter: brightness(60%);
+  transition: all 0.5s ease;
 }
 
 .texto-final {
@@ -280,15 +288,16 @@ footer img {
   cursor: pointer;
 }
 
-.boton-final a:hover {
-  background-color: #4f006e;
-  transition: background-color 0.6s ease;
-}
-
 .boton-final a {
   text-decoration: none;
   color: #fff;
   padding: 15px 15px;
   border-radius: 15px;
-  background-color: #500049;
+  background-color: #00004f;
+}
+
+.boton-final a:hover {
+  background-color: #0000af;
+  transition: all 0.6s ease;
+  border: 1px solid #fff;
 }
