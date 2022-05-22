@@ -1,7 +1,13 @@
 * {
   font-family: "Radio Canada", sans-serif;
+  background-size: cover;
 }
 
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .header {
   display: flex;
   width: 100%;
@@ -26,35 +32,78 @@
   filter: invert(10);
 }
 
+/* .bancoitba {
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+} */
 * {
   box-sizing: border-box;
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 30px;
   color: white;
 }
 
-div p {
-  height: 45px;
-  font-size: 50px;
+h2 {
+  font-size: 23px;
   color: white;
+}
+.parrafos {
+  font-size: 15px;
+  color: white;
+  text-align: justify;
+  margin: 30px 120px 25px 120px;
+  border-left: thick solid #22229c;
+  /* border-left: thick solid rgb(156,137,184) */
+  border-left-style: inset;
+  border-radius: 2px;
+  padding-left: 20px;
+}
+
+.burbuja {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  background-color: rgb(220, 220, 220, 0.5);
+  padding: 10px;
+  border-radius: 100%;
+  height: 120%;
+  width: 110px;
+  justify-content: left;
+  align-items: center;
+}
+.millon {
+  color: #aa07b5;
+  font-size: 15px;
+  text-align: justify;
+}
+
+/* .linea-v {
+  
+  height: 100%;
+  left: 50%;
+  position:absolute;
+} */
+
+.ending {
+  font-size: x-small;
+  color: white;
+  text-align: center;
 }
 
 body {
-  font-size: 20px;
+  /* font-size: 20px; */
   margin: 0;
   background-color: #000010;
-}
-
-.inicio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* background: linear-gradient(30deg, #39043c, #000010); */
+  background: radial-gradient(black, #28092a);
 }
 
 .final {
   font-size: medium;
   width: 450px;
-  text-align: center;
 }
