@@ -1,5 +1,6 @@
 * {
   font-family: "Radio Canada", sans-serif;
+  list-style-type: none;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
   align-items: center;
   top: 0vh;
   position: sticky;
+  z-index: 10;
 }
 
 .menu {
@@ -64,7 +66,7 @@ body {
 
 .buscador {
   width: 50%;
-  background: linear-gradient(15deg, #00009f 0%, #0000a0 50%, #0077ff 100%);
+  background: linear-gradient(15deg, #b700ff 0%, #430050 50%, #b700ff 100%);
   border-radius: 17px;
   height: 52px;
   margin-left: 25%;
@@ -136,33 +138,112 @@ body {
   text-align: center;
 }
 
+.grid-container li {
+  cursor: pointer;
+}
+
+.grid1 img {
+  height: 30px;
+  width: auto;
+  filter: brightness(1000%);
+  padding-right: 10px;
+}
+
+.grid1 {
+  display: grid;
+  font-size: 150%;
+  gap: 20%;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 3fr repeat(5, 1fr);
+  padding: 0;
+}
+
+.grid1 li {
+  width: max-content;
+  justify-self: center;
+}
+
+.grid1 li:hover {
+  border-bottom: 1px solid #fff;
+  transition: border-bottom 0.5s ease;
+}
+
+.titulito {
+  border-bottom: 1px solid #fff;
+  width: max-content;
+  justify-self: center;
+  font-size: 150%;
+}
+
+.grid2 img {
+  height: 30px;
+  width: auto;
+  filter: brightness(1000%);
+  padding-right: 10px;
+}
+
+.grid2 {
+  display: grid;
+  font-size: 150%;
+  gap: 20%;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 3fr repeat(5, 1fr);
+  padding: 0;
+}
+
+.grid2 li {
+  width: max-content;
+  justify-self: center;
+}
+
+.grid2 :last-child {
+  word-break: break-all;
+}
+
+.grid2 li:hover {
+  border-bottom: 1px solid #fff;
+  transition: border-bottom 0.5s ease;
+}
+
 .grid3 {
   color: #000;
   text-align: left;
   grid-column: span 2;
-  background-color: #fff;
+  background-color: rgb(204, 204, 204);
   font-size: 125%;
-  box-shadow: 7px 7px #000050;
+  box-shadow: 7px 7px #500049;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5%;
+  align-items: center;
 }
 
 .grid3 p {
-  width: 45%;
-  margin-left: 5%;
-  display: block;
-  font-weight: bold;
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin-left: 8%;
 }
 
 .grid3 a {
   text-decoration: none;
   color: #000080;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  width: 100%;
+}
+
+.grid3 :nth-child(2) {
+  margin-top: -10%;
 }
 
 .mapita {
-  width: 20%;
+  width: 50%;
   transform: rotate(15deg);
   filter: brightness(10%);
-  margin-left: 50%;
-  margin-top: -90%;
 }
 
 .texto-final {
@@ -184,4 +265,30 @@ footer img {
   cursor: pointer;
   filter: invert(0.75);
   margin-bottom: -5px;
+}
+
+.boton-final {
+  width: max-content;
+  height: max-content;
+  background-color: #4f006e;
+  border-radius: 15px;
+  font-size: 110%;
+  font-weight: bold;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+}
+
+.boton-final a:hover {
+  background-color: #4f006e;
+  transition: background-color 0.6s ease;
+}
+
+.boton-final a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 15px;
+  border-radius: 15px;
+  background-color: #500049;
 }
