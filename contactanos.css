@@ -4,7 +4,7 @@
 
 body {
   background-color: #000010;
-  height: 85vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -20,7 +20,6 @@ body {
   background-color: #000030;
   justify-content: center;
   align-items: center;
-  top: 0vh;
   position: sticky;
 }
 
@@ -49,6 +48,7 @@ body {
   background-color: #512da8;
   height: fit-content;
   border-radius: 3rem;
+  margin-top: 3.5rem;
 }
 
 .form-container {
@@ -62,6 +62,7 @@ h2 {
   font-family: "Radio Canada", sans-serif;
   font-weight: 800;
   color: white;
+  margin-top: -1.5rem;
 }
 
 form {
@@ -90,14 +91,23 @@ textarea:focus-visible {
 }
 
 button {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   border-radius: 10px;
   border: none;
   color: white;
   background-color: #8559da;
   cursor: pointer;
+  margin-top: 0.5rem;
+  margin-bottom: -1.5rem;
 }
 
 button:focus-visible {
   outline: unset;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  margin-top: 3%;
+  border-top: 1px solid rgba(255, 255, 255, 0.082);
 }
