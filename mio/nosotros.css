@@ -32,13 +32,6 @@
   filter: invert(10);
 }
 
-/* .bancoitba {
-  height: 200px;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-} */
 * {
   box-sizing: border-box;
 }
@@ -46,12 +39,10 @@
 h1 {
   font-size: 30px;
   color: white;
+  margin-top: 50px;
+  margin-bottom: 0%;
 }
 
-/* h2 {
-  font-size: 23px;
-  color: white;
-} */
 .parrafos {
   font-size: 15px;
   color: white;
@@ -66,31 +57,48 @@ h1 {
 
 .burbuja {
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   background-color: rgb(220, 220, 220, 0.5);
   padding: 10px;
   border-radius: 100%;
-  height: 120%;
-  width: 110px;
+  height: 150px;
+  width: 150px;
   justify-content: left;
   align-items: center;
+  margin-right: 800px;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 .millon {
   color: #aa07b5;
-  font-size: 15px;
-  text-align: justify;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: -10px;
+  margin-top: 45px;
 }
 
-/* .linea-v {
-  
-  height: 100%;
-  left: 50%;
-  position:absolute;
-} */
+.link {
+  overflow: auto;
+  background-color: rgb(220, 220, 220, 0.5);
+  padding: 10px;
+}
+a.direccion {
+  color: #22229c;
+  font-size: 12px;
+  float: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a.telefono {
+  color: #22229c;
+  font-size: 12px;
+  float: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .ending {
-  font-size: x-small;
+  font-size: xx-small;
   color: white;
   text-align: center;
 }
