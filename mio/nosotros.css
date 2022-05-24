@@ -3,33 +3,42 @@
   background-size: cover;
 }
 
-.inicio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.header {
+.navegador {
   display: flex;
   width: 100%;
-  background-color: #000020;
+  height: 10vh;
+  background-color: #000030;
   justify-content: center;
   align-items: center;
+  top: 0vh;
+  position: sticky;
+  z-index: 10;
 }
 
 .banco {
-  height: 70%;
-  width: 15%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   filter: brightness(10);
   cursor: pointer;
+  min-width: 150px;
 }
 
 .menu {
-  height: 5%;
+  height: auto;
+  width: 3%;
   position: absolute;
   left: 1.5%;
-  align-items: center;
-  filter: invert(10);
+  align-self: center;
+  filter: invert(1);
+  cursor: pointer;
+  min-width: 35px;
+}
+
+.link-titulo {
+  justify-self: center;
+  width: max-content;
+  height: 100%;
 }
 
 * {
@@ -41,13 +50,14 @@ h1 {
   color: white;
   margin-top: 50px;
   margin-bottom: 0%;
+  text-align: center;
 }
 
 .parrafos {
   font-size: 15px;
   color: white;
   text-align: justify;
-  margin: 30px 120px 25px 120px;
+  margin: 40px 120px 25px 120px;
   border-left: thick solid #22229c;
   /* border-left: thick solid rgb(156,137,184) */
   border-left-style: inset;
@@ -66,8 +76,6 @@ h1 {
   width: 150px;
   justify-content: left;
   align-items: center;
-  margin-right: 800px;
-  margin-bottom: 30px;
   font-weight: bold;
 }
 .millon {
@@ -78,11 +86,27 @@ h1 {
   margin-top: 45px;
 }
 
+.posicion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  width: 100%;
+  margin-left: 10;
+  gap: 10%;
+}
+
 .link {
-  overflow: auto;
   background-color: rgb(220, 220, 220, 0.5);
   padding: 10px;
+  width: 50%;
+  height: 10%;
 }
+
+footer {
+  text-align: center;
+}
+
 a.direccion {
   color: #22229c;
   font-size: 12px;
@@ -98,9 +122,21 @@ a.telefono {
 }
 
 .ending {
-  font-size: xx-small;
+  position: absolute;
+  font-size: 13px;
   color: white;
   text-align: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hr {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.233);
+  height: 1px;
 }
 
 body {
@@ -109,9 +145,4 @@ body {
   background-color: #000010;
   /* background: linear-gradient(30deg, #39043c, #000010); */
   background: radial-gradient(black, #28092a);
-}
-
-.final {
-  font-size: medium;
-  width: 450px;
 }
