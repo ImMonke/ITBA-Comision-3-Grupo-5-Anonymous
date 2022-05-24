@@ -1,46 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Log in Itbank</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav id="nav">
-            <img id="nav-primario" src="/img/itbank.png" alt="logo itbank">
-            <img  id="nav-secundario" src="/img/lista.png" alt="lista desplegable">
-        </nav>
-    
+      <nav class="navbar">
+        <img src="./imagenes/lista.png" alt="Menú" class="menu" />
+        <a href="index.html" class="link-titulo" title="Home"
+          ><img src="./imagenes/itbank.png" alt="ITBANK" class="titulo"
+        /></a>
+      </nav>
     </header>
     <section>
-        <h1>Ingresar</h1>
-        <div id="formulario">
-            <form action="#">
-                <label for="usuario">Usuario</label>
-                <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario">
-                <label for="documento">Documento</label>
-                <input type="documneto" id="documento" name="documento" placeholder="********">
-                <label for="contraseña">Contraseña</label>
-                <input type="password" id="contraseña" name="contraseña" placeholder="8 caracteres máximo">
-                
-                <div class="boton">
-                    <input type="submit" value="Iniciar sesion" name="Iniciar Sesion" id="Iniciar-sesion"> 
-                </div>
-                <div id="cuenta">
-                    <spam>¿No tenes cuenta?</spam> <a href="#">Registrate</a>
-                </div>
-            </form>
-        </div>
+      <h1>Ingresar</h1>
+      <div id="formulario">
+        <form action="#">
+          <label for="usuario">Usuario</label>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            placeholder="Nombre de usuario"
+          />
+          <label for="documento">Documento</label>
+          <input
+            type="documneto"
+            id="documento"
+            name="documento"
+            placeholder="********"
+          />
+          <label for="contraseña">Contraseña</label>
+          <input
+            type="password"
+            id="contraseña"
+            name="contraseña"
+            placeholder="8 caracteres máximo"
+          />
+
+          <div class="boton">
+            <input
+              type="submit"
+              value="Iniciar sesion"
+              name="Iniciar Sesion"
+              id="Iniciar-sesion"
+            />
+          </div>
+          <div id="cuenta">
+            <spam>¿No tenes cuenta?</spam> <a href="#">Registrate</a>
+          </div>
+        </form>
+      </div>
     </section>
-    <footer>
-        Todos los derechos reservados a Itbank. 
-    </footer>
-</body>
+    <footer>Todos los derechos reservados a Itbank.</footer>
+  </body>
 </html>
