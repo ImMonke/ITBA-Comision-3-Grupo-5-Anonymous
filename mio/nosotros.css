@@ -1,0 +1,117 @@
+* {
+  font-family: "Radio Canada", sans-serif;
+  background-size: cover;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  display: flex;
+  width: 100%;
+  background-color: #000020;
+  justify-content: center;
+  align-items: center;
+}
+
+.banco {
+  height: 70%;
+  width: 15%;
+  object-fit: cover;
+  filter: brightness(10);
+  cursor: pointer;
+}
+
+.menu {
+  height: 5%;
+  position: absolute;
+  left: 1.5%;
+  align-items: center;
+  filter: invert(10);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 30px;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 0%;
+}
+
+.parrafos {
+  font-size: 15px;
+  color: white;
+  text-align: justify;
+  margin: 30px 120px 25px 120px;
+  border-left: thick solid #22229c;
+  /* border-left: thick solid rgb(156,137,184) */
+  border-left-style: inset;
+  border-radius: 2px;
+  padding-left: 20px;
+}
+
+.burbuja {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgb(220, 220, 220, 0.5);
+  padding: 10px;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  justify-content: left;
+  align-items: center;
+  margin-right: 800px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.millon {
+  color: #aa07b5;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: -10px;
+  margin-top: 45px;
+}
+
+.link {
+  overflow: auto;
+  background-color: rgb(220, 220, 220, 0.5);
+  padding: 10px;
+}
+a.direccion {
+  color: #22229c;
+  font-size: 12px;
+  float: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a.telefono {
+  color: #22229c;
+  font-size: 12px;
+  float: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ending {
+  font-size: xx-small;
+  color: white;
+  text-align: center;
+}
+
+body {
+  /* font-size: 20px; */
+  margin: 0;
+  background-color: #000010;
+  /* background: linear-gradient(30deg, #39043c, #000010); */
+  background: radial-gradient(black, #28092a);
+}
+
+.final {
+  font-size: medium;
+  width: 450px;
+}
